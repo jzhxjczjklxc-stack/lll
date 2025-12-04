@@ -1,0 +1,599 @@
+{
+  "com/daripher/sexmod/client/util/FakeChunkProvider": {
+    "name": "com/daripher/sexmod/client/util/FakeChunkProvider",
+    "interfaces": [
+      "net/minecraft/world/chunk/IChunkProvider"
+    ]
+  },
+  "com/daripher/sexmod/client/util/FakeNetworkManager$1": {
+    "name": "com/daripher/sexmod/client/util/FakeNetworkManager$1",
+    "interfaces": [
+      "io/netty/channel/Channel"
+    ]
+  },
+  "com/daripher/sexmod/client/util/FakeNetworkManager$1$1": {
+    "name": "com/daripher/sexmod/client/util/FakeNetworkManager$1$1",
+    "interfaces": [
+      "io/netty/util/Attribute"
+    ]
+  },
+  "com/daripher/sexmod/client/util/FakeWorld$FakeChunkProvider": {
+    "name": "com/daripher/sexmod/client/util/FakeWorld$FakeChunkProvider",
+    "interfaces": [
+      "net/minecraft/world/chunk/IChunkProvider"
+    ]
+  },
+  "com/daripher/sexmod/client/util/FakeWorld$FakeSaveHandler": {
+    "name": "com/daripher/sexmod/client/util/FakeWorld$FakeSaveHandler",
+    "interfaces": [
+      "net/minecraft/world/storage/ISaveHandler"
+    ]
+  },
+  "com/daripher/sexmod/client/util/FakeWorldFakeSaveHandler": {
+    "name": "com/daripher/sexmod/client/util/FakeWorldFakeSaveHandler",
+    "interfaces": [
+      "net/minecraft/world/storage/ISaveHandler"
+    ]
+  },
+  "com/schnurritv/sexmod/Main": {
+    "name": "com/schnurritv/sexmod/Main",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/minecraftforge/fml/common/Mod;",
+        "target": "com/schnurritv/sexmod/Main",
+        "values": {
+          "acceptedMinecraftVersions": {
+            "value": "[1.12.2]"
+          },
+          "modid": {
+            "value": "sexmod"
+          },
+          "name": {
+            "value": "SchnurriTV\u0027s Sex Mod"
+          },
+          "version": {
+            "value": "1.3 beta"
+          }
+        }
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/Mod$Instance;",
+        "target": "instance"
+      },
+      {
+        "type": "FIELD",
+        "name": "Lnet/minecraftforge/fml/common/SidedProxy;",
+        "target": "proxy",
+        "values": {
+          "clientSide": {
+            "value": "com.schnurritv.sexmod.proxy.ClientProxy"
+          },
+          "serverSide": {
+            "value": "com.schnurritv.sexmod.proxy.CommonProxy"
+          }
+        }
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/Mod$EventHandler;",
+        "target": "preInit(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/Mod$EventHandler;",
+        "target": "init(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/Mod$EventHandler;",
+        "target": "postInit(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V"
+      }
+    ]
+  },
+  "com/schnurritv/sexmod/Packets/ChangeDataParameter": {
+    "name": "com/schnurritv/sexmod/Packets/ChangeDataParameter",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessage"
+    ]
+  },
+  "com/schnurritv/sexmod/Packets/ChangeDataParameter$Handler": {
+    "name": "com/schnurritv/sexmod/Packets/ChangeDataParameter$Handler",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessageHandler"
+    ]
+  },
+  "com/schnurritv/sexmod/Packets/ClearAnimationCache": {
+    "name": "com/schnurritv/sexmod/Packets/ClearAnimationCache",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessage"
+    ]
+  },
+  "com/schnurritv/sexmod/Packets/ClearAnimationCache$Handler": {
+    "name": "com/schnurritv/sexmod/Packets/ClearAnimationCache$Handler",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessageHandler"
+    ]
+  },
+  "com/schnurritv/sexmod/Packets/JennyAwaitPlayerDoggy": {
+    "name": "com/schnurritv/sexmod/Packets/JennyAwaitPlayerDoggy",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessage"
+    ]
+  },
+  "com/schnurritv/sexmod/Packets/JennyAwaitPlayerDoggy$Handler": {
+    "name": "com/schnurritv/sexmod/Packets/JennyAwaitPlayerDoggy$Handler",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessageHandler"
+    ]
+  },
+  "com/schnurritv/sexmod/Packets/MakeRichWish": {
+    "name": "com/schnurritv/sexmod/Packets/MakeRichWish",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessage"
+    ]
+  },
+  "com/schnurritv/sexmod/Packets/MakeRichWish$Handler": {
+    "name": "com/schnurritv/sexmod/Packets/MakeRichWish$Handler",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessageHandler"
+    ]
+  },
+  "com/schnurritv/sexmod/Packets/OpenGirlInventory": {
+    "name": "com/schnurritv/sexmod/Packets/OpenGirlInventory",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessage"
+    ]
+  },
+  "com/schnurritv/sexmod/Packets/OpenGirlInventory$Handler": {
+    "name": "com/schnurritv/sexmod/Packets/OpenGirlInventory$Handler",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessageHandler"
+    ]
+  },
+  "com/schnurritv/sexmod/Packets/PrepareAction": {
+    "name": "com/schnurritv/sexmod/Packets/PrepareAction",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessage"
+    ]
+  },
+  "com/schnurritv/sexmod/Packets/PrepareAction$Handler": {
+    "name": "com/schnurritv/sexmod/Packets/PrepareAction$Handler",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessageHandler"
+    ]
+  },
+  "com/schnurritv/sexmod/Packets/RemoveItems": {
+    "name": "com/schnurritv/sexmod/Packets/RemoveItems",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessage"
+    ]
+  },
+  "com/schnurritv/sexmod/Packets/RemoveItems$Handler": {
+    "name": "com/schnurritv/sexmod/Packets/RemoveItems$Handler",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessageHandler"
+    ]
+  },
+  "com/schnurritv/sexmod/Packets/ResetGirl": {
+    "name": "com/schnurritv/sexmod/Packets/ResetGirl",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessage"
+    ]
+  },
+  "com/schnurritv/sexmod/Packets/ResetGirl$Handler": {
+    "name": "com/schnurritv/sexmod/Packets/ResetGirl$Handler",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessageHandler"
+    ]
+  },
+  "com/schnurritv/sexmod/Packets/SendChatMessage": {
+    "name": "com/schnurritv/sexmod/Packets/SendChatMessage",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessage"
+    ]
+  },
+  "com/schnurritv/sexmod/Packets/SendChatMessage$Handler": {
+    "name": "com/schnurritv/sexmod/Packets/SendChatMessage$Handler",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessageHandler"
+    ]
+  },
+  "com/schnurritv/sexmod/Packets/SendCompanionHome": {
+    "name": "com/schnurritv/sexmod/Packets/SendCompanionHome",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessage"
+    ]
+  },
+  "com/schnurritv/sexmod/Packets/SendCompanionHome$Handler": {
+    "name": "com/schnurritv/sexmod/Packets/SendCompanionHome$Handler",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessageHandler"
+    ]
+  },
+  "com/schnurritv/sexmod/Packets/SendEllieToPlayer": {
+    "name": "com/schnurritv/sexmod/Packets/SendEllieToPlayer",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessage"
+    ]
+  },
+  "com/schnurritv/sexmod/Packets/SendEllieToPlayer$Handler": {
+    "name": "com/schnurritv/sexmod/Packets/SendEllieToPlayer$Handler",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessageHandler"
+    ]
+  },
+  "com/schnurritv/sexmod/Packets/SendGirlToBed": {
+    "name": "com/schnurritv/sexmod/Packets/SendGirlToBed",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessage"
+    ]
+  },
+  "com/schnurritv/sexmod/Packets/SendGirlToBed$Handler": {
+    "name": "com/schnurritv/sexmod/Packets/SendGirlToBed$Handler",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessageHandler"
+    ]
+  },
+  "com/schnurritv/sexmod/Packets/SetNewHome": {
+    "name": "com/schnurritv/sexmod/Packets/SetNewHome",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessage"
+    ]
+  },
+  "com/schnurritv/sexmod/Packets/SetNewHome$Handler": {
+    "name": "com/schnurritv/sexmod/Packets/SetNewHome$Handler",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessageHandler"
+    ]
+  },
+  "com/schnurritv/sexmod/Packets/SetPlayerMovement": {
+    "name": "com/schnurritv/sexmod/Packets/SetPlayerMovement",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessage"
+    ]
+  },
+  "com/schnurritv/sexmod/Packets/SetPlayerMovement$Handler": {
+    "name": "com/schnurritv/sexmod/Packets/SetPlayerMovement$Handler",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessageHandler"
+    ]
+  },
+  "com/schnurritv/sexmod/Packets/SetSlimePregnant": {
+    "name": "com/schnurritv/sexmod/Packets/SetSlimePregnant",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessage"
+    ]
+  },
+  "com/schnurritv/sexmod/Packets/SetSlimePregnant$Handler": {
+    "name": "com/schnurritv/sexmod/Packets/SetSlimePregnant$Handler",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessageHandler"
+    ]
+  },
+  "com/schnurritv/sexmod/Packets/SummonAllie": {
+    "name": "com/schnurritv/sexmod/Packets/SummonAllie",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessage"
+    ]
+  },
+  "com/schnurritv/sexmod/Packets/SummonAllie$Handler": {
+    "name": "com/schnurritv/sexmod/Packets/SummonAllie$Handler",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessageHandler"
+    ]
+  },
+  "com/schnurritv/sexmod/Packets/TeleportPlayer": {
+    "name": "com/schnurritv/sexmod/Packets/TeleportPlayer",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessage"
+    ]
+  },
+  "com/schnurritv/sexmod/Packets/TeleportPlayer$Handler": {
+    "name": "com/schnurritv/sexmod/Packets/TeleportPlayer$Handler",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessageHandler"
+    ]
+  },
+  "com/schnurritv/sexmod/Packets/UpdateEquipment": {
+    "name": "com/schnurritv/sexmod/Packets/UpdateEquipment",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessage"
+    ]
+  },
+  "com/schnurritv/sexmod/Packets/UpdateEquipment$Handler": {
+    "name": "com/schnurritv/sexmod/Packets/UpdateEquipment$Handler",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessageHandler"
+    ]
+  },
+  "com/schnurritv/sexmod/Packets/UploadInventoryToServer": {
+    "name": "com/schnurritv/sexmod/Packets/UploadInventoryToServer",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessage"
+    ]
+  },
+  "com/schnurritv/sexmod/Packets/UploadInventoryToServer$Handler": {
+    "name": "com/schnurritv/sexmod/Packets/UploadInventoryToServer$Handler",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessageHandler"
+    ]
+  },
+  "com/schnurritv/sexmod/Packets/WishDone": {
+    "name": "com/schnurritv/sexmod/Packets/WishDone",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessage"
+    ]
+  },
+  "com/schnurritv/sexmod/Packets/WishDone$Handler": {
+    "name": "com/schnurritv/sexmod/Packets/WishDone$Handler",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/simpleimpl/IMessageHandler"
+    ]
+  },
+  "com/schnurritv/sexmod/companion/Companion": {
+    "name": "com/schnurritv/sexmod/companion/Companion",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/minecraftforge/fml/common/Mod$EventBusSubscriber;",
+        "target": "com/schnurritv/sexmod/companion/Companion"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "noDeath(Lnet/minecraftforge/event/entity/living/LivingDeathEvent;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "downed(Lnet/minecraftforge/event/entity/living/LivingHurtEvent;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "healDowned(Lnet/minecraftforge/event/entity/living/LivingHealEvent;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "dropItems(Lnet/minecraftforge/event/entity/living/LivingDeathEvent;)V"
+      }
+    ]
+  },
+  "com/schnurritv/sexmod/companion/CompanionPearl": {
+    "name": "com/schnurritv/sexmod/companion/CompanionPearl",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/minecraftforge/fml/common/Mod$EventBusSubscriber;",
+        "target": "com/schnurritv/sexmod/companion/CompanionPearl"
+      }
+    ]
+  },
+  "com/schnurritv/sexmod/companion/CompanionPearl$EventHandler": {
+    "name": "com/schnurritv/sexmod/companion/CompanionPearl$EventHandler",
+    "annotations": [
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "arrive(Lnet/minecraftforge/event/entity/living/EnderTeleportEvent;)V"
+      }
+    ]
+  },
+  "com/schnurritv/sexmod/companion/DamageCalculation": {
+    "name": "com/schnurritv/sexmod/companion/DamageCalculation",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/minecraftforge/fml/common/Mod$EventBusSubscriber;",
+        "target": "com/schnurritv/sexmod/companion/DamageCalculation"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "calculateDamage(Lnet/minecraftforge/event/entity/living/LivingDamageEvent;)V"
+      }
+    ]
+  },
+  "com/schnurritv/sexmod/events/DontRenderPlayersThatHaveSex": {
+    "name": "com/schnurritv/sexmod/events/DontRenderPlayersThatHaveSex",
+    "annotations": [
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "RenderPlayer(Lnet/minecraftforge/client/event/RenderPlayerEvent$Pre;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "RenderHand(Lnet/minecraftforge/client/event/RenderHandEvent;)V"
+      }
+    ]
+  },
+  "com/schnurritv/sexmod/events/HandlePlayerMovement": {
+    "name": "com/schnurritv/sexmod/events/HandlePlayerMovement",
+    "annotations": [
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "PreventPlayerFromMoving(Lnet/minecraftforge/client/event/InputUpdateEvent;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "PreventPlayerFromTakingAction(Lnet/minecraftforge/client/event/MouseEvent;)V"
+      }
+    ]
+  },
+  "com/schnurritv/sexmod/events/NoDamageForGirlsWhileHavingTheSex": {
+    "name": "com/schnurritv/sexmod/events/NoDamageForGirlsWhileHavingTheSex",
+    "annotations": [
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "NoDamageForGirlsWhileHavingTheSex(Lnet/minecraftforge/event/entity/living/LivingAttackEvent;)V"
+      }
+    ]
+  },
+  "com/schnurritv/sexmod/events/PornWarning": {
+    "name": "com/schnurritv/sexmod/events/PornWarning",
+    "annotations": [
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "PornWarning(Lnet/minecraftforge/fml/common/gameevent/TickEvent$ClientTickEvent;)V"
+      }
+    ]
+  },
+  "com/schnurritv/sexmod/events/RemoveEntityFromList": {
+    "name": "com/schnurritv/sexmod/events/RemoveEntityFromList",
+    "annotations": [
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "RemoveSophiFromList(Lnet/minecraftforge/event/entity/living/LivingDeathEvent;)V"
+      }
+    ]
+  },
+  "com/schnurritv/sexmod/events/ResetGirlList": {
+    "name": "com/schnurritv/sexmod/events/ResetGirlList",
+    "annotations": [
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "resetGirlList(Lnet/minecraftforge/client/event/GuiOpenEvent;)V"
+      }
+    ]
+  },
+  "com/schnurritv/sexmod/events/ResetJoiningPlayer": {
+    "name": "com/schnurritv/sexmod/events/ResetJoiningPlayer",
+    "annotations": [
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "resetJoiningPlayer(Lnet/minecraftforge/fml/common/gameevent/PlayerEvent$PlayerLoggedInEvent;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "resetGirls(Lnet/minecraftforge/fml/common/gameevent/PlayerEvent$PlayerLoggedOutEvent;)V"
+      }
+    ]
+  },
+  "com/schnurritv/sexmod/events/SlimeJumpDetector": {
+    "name": "com/schnurritv/sexmod/events/SlimeJumpDetector",
+    "annotations": [
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "landing(Lnet/minecraftforge/event/entity/living/LivingFallEvent;)V"
+      }
+    ]
+  },
+  "com/schnurritv/sexmod/girls/GirlEntity": {
+    "name": "com/schnurritv/sexmod/girls/GirlEntity",
+    "interfaces": [
+      "software/bernie/geckolib3/core/IAnimatable"
+    ]
+  },
+  "com/schnurritv/sexmod/girls/GirlModel": {
+    "name": "com/schnurritv/sexmod/girls/GirlModel",
+    "interfaces": [
+      "com/schnurritv/sexmod/girls/ModelBones"
+    ]
+  },
+  "com/schnurritv/sexmod/girls/allie/lamp/LampItem": {
+    "name": "com/schnurritv/sexmod/girls/allie/lamp/LampItem",
+    "interfaces": [
+      "software/bernie/geckolib3/core/IAnimatable"
+    ],
+    "annotations": [
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "register(Lnet/minecraftforge/event/RegistryEvent$Register;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "registerModel(Lnet/minecraftforge/client/event/ModelRegistryEvent;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "hideHotbar(Lnet/minecraftforge/client/event/RenderGameOverlayEvent$Pre;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "putInChest(Lnet/minecraftforge/event/LootTableLoadEvent;)V"
+      }
+    ]
+  },
+  "com/schnurritv/sexmod/girls/slime/friendlySlime/FriendlySlimeGelLayer": {
+    "name": "com/schnurritv/sexmod/girls/slime/friendlySlime/FriendlySlimeGelLayer",
+    "interfaces": [
+      "net/minecraft/client/renderer/entity/layers/LayerRenderer"
+    ]
+  },
+  "com/schnurritv/sexmod/gui/BlackScreenUI": {
+    "name": "com/schnurritv/sexmod/gui/BlackScreenUI",
+    "annotations": [
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "renderUI(Lnet/minecraftforge/client/event/RenderGameOverlayEvent;)V"
+      }
+    ]
+  },
+  "com/schnurritv/sexmod/gui/SexUI": {
+    "name": "com/schnurritv/sexmod/gui/SexUI",
+    "annotations": [
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "renderUI(Lnet/minecraftforge/client/event/RenderGameOverlayEvent;)V"
+      }
+    ]
+  },
+  "com/schnurritv/sexmod/hornypotion/HornyPotion": {
+    "name": "com/schnurritv/sexmod/hornypotion/HornyPotion",
+    "annotations": [
+      {
+        "type": "CLASS",
+        "name": "Lnet/minecraftforge/fml/common/Mod$EventBusSubscriber;",
+        "target": "com/schnurritv/sexmod/hornypotion/HornyPotion"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "removeHornyFromPlayer(Lnet/minecraftforge/fml/common/gameevent/TickEvent$PlayerTickEvent;)V"
+      },
+      {
+        "type": "METHOD",
+        "name": "Lnet/minecraftforge/fml/common/eventhandler/SubscribeEvent;",
+        "target": "makeAnimalsHorny(Lnet/minecraftforge/event/entity/living/LivingEvent$LivingUpdateEvent;)V"
+      }
+    ]
+  },
+  "com/schnurritv/sexmod/util/Handlers/GuiHandler": {
+    "name": "com/schnurritv/sexmod/util/Handlers/GuiHandler",
+    "interfaces": [
+      "net/minecraftforge/fml/common/network/IGuiHandler"
+    ]
+  },
+  "com/schnurritv/sexmod/world/WorldGenCustomStructures": {
+    "name": "com/schnurritv/sexmod/world/WorldGenCustomStructures",
+    "interfaces": [
+      "net/minecraftforge/fml/common/IWorldGenerator"
+    ]
+  },
+  "com/schnurritv/sexmod/world/WorldGenStructure": {
+    "name": "com/schnurritv/sexmod/world/WorldGenStructure",
+    "interfaces": [
+      "com/schnurritv/sexmod/util/interfaces/IStructure"
+    ]
+  }
+}
